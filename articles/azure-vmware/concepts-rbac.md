@@ -20,12 +20,12 @@ In Azure VMware Solution, vCenter has a built-in local user called cloudadmin th
 You can view the privileges granted to the Azure VMware Solution CloudAdmin role on your Azure VMware Solution private cloud vCenter.
 
 1. Log into the SDDC vSphere Client and go to **Menu** > **Administration**.
-1. Under **Access Control**, select **Roles**.
+1. Under **Access Control**, select **Roles**.a
 1. From the list of roles, select **CloudAdmin** and then select **Privileges**. 
 
    :::image type="content" source="media/rbac-cloudadmin-role-privileges.png" alt-text="How to view the CloudAdmin role privileges in vSphere Client":::
 
-The CloudAdmin role in Azure VMware Solution has the following privileges on vCenter. Refer to the [VMware product documentation](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-ED56F3C4-77D0-49E3-88B6-B99B8B437B62.html) for a detailed explanation of each privilege.
+The CloudAdmin role in Azure VMware Solution has the following privileges on vCenter. Refer to the [VMware product documentation](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-ED56F3C4-77D0-49E3-88B6-B99B8B437B62.html) for a detailed explanation of each privilege. The CloudAdmin role is assigned as a global permissions.
 
 | Privilege | Description |
 | --------- | ----------- |
