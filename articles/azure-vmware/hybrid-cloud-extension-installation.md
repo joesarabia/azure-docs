@@ -135,7 +135,7 @@ For an end-to-end overview of this step, view the [Azure VMware Solution: Activa
    :::image type="content" source="media/hybrid-cloud-extension-installation/verify-and-restart.png" alt-text="Verify that all the inputs are correct and select **Restart**.":::
 
     > [!NOTE]
-    > You'll experience a few minute delay after selecting Restart.  After the services restart, it's critical that you see the vCenter server listed with a Green dot next to it as outlined below.
+    > You'll experience a few minute delay after selecting Restart.  After the services restart, it's critical that you see the vCenter server listed with a Green dot next to it as outlined below.  
 
    :::image type="content" source="media/hybrid-cloud-extension-installation/activation-done.png" alt-text="activation done":::
 
