@@ -139,7 +139,7 @@ For an end-to-end overview of this step, view the [Azure VMware Solution: Activa
 
    :::image type="content" source="media/hybrid-cloud-extension-installation/activation-done.png" alt-text="activation done":::
 
-## Configure HCX
+## Add Site Pairing
 
 Now you're ready to add a site pairing, create a network and compute profile, and enable services, such as migration, Network Extension, or Disaster Recovery.
 
@@ -158,4 +158,57 @@ Now you're ready to add a site pairing, create a network and compute profile, an
    You should now see a screen showing your HCX Manager in Azure VMware Solution and your HCX Manager on- premises connected (paired).
 
    :::image type="content" source="media/hybrid-cloud-extension-installation/site-pairing-complete.png" alt-text="You should now see a screen showing your HCX Manager in Azure VMware Solution and your HCX Manager on- premises connected (paired).":::
+
+## Create Compute Profile
+
+1. Under the **Infrastructure** group, select **Interconnect**, then **Compute Profiles** and **Create Compute Profile**.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/compute-profile-create.png" alt-text="Under the **Infrastructure** group, select **Interconnect**, then **Compute Profiles** and **Create Compute Profile**":::
+
+1. Enter a **name** for the Compute Profile, select **Continue**.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/name-compute-profile.png" alt-text="Enter a **name** for the Compute Profile, select **Continue**.":::
+
+1. Select the services to enable, select Continue.
+
+    > [!NOTE]
+    > Generally nothing will be changed here.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/vmware-hcx-services.png" alt-text="Generally nothing will be changed here.":::
+
+1. In **Select Service Resources**, select one or more service resources (clusters) to enable for the selected VMware HCX services.  After you select the cluster(s) in your on-premises datacenter select **Continue**
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/select-service-resource.png" alt-text="In **Select Service Resources**, select one or more service resources (clusters) to enable for the selected VMware HCX services.  After you select the cluster(s) in your on-premises datacenter select **Continue**":::
+
+1. From **Select Datastore**, select the datastore storage resource for deploying the VMware HCX Interconnect appliances, and then select **Continue**.
+
+When multiple resources are selected, VMware HCX uses the first resource selected until its capacity is exhausted.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/deployment-resources-and-reservations.png" alt-text="From **Select Datastore**, select the datastore storage resource for deploying the VMware HCX Interconnect appliances, and then select **Continue**":::
+
+1. Select **Management Network Profile**, the management network profile you created in previous steps, and then select **Continue**.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/management-network-profile.png" alt-text="Select **Management Network Profile**, the management network profile you created in previous steps, and then select **Continue**":::
+
+1. Select **Uplink Network Profile**, the uplink network profile you created in previous steps, and then select **Continue**.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/select-uplink-network-profile.png" alt-text="Select **Uplink Network Profile**, the uplink network profile you created in previous steps, and then select **Continue**":::
+
+1. Select **vMotion Network Profile**, the vMotion network profile you created in prior steps, and then select **Continue**.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/vmotion-network-profile.png" alt-text="Select vMotion Network Profile, the vMotion network profile you created in prior steps, and then select Continue.":::
+
+1. Choose **vSphere Replication Network Profile**, the replication network profile you created in prior steps, and then choose **Continue**.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/select-replication-network-profile.png" alt-text="Choose vSphere Replication Network Profile, the replication network profile you created in prior steps, and then choose Continue.":::
+
+
+
+
+11.	Select Distributed Switches for Network Extensions, the distributed virtual switches that contain the virtual machines to be migrated to Azure VMware Solution on a layer-2 extended network, and then select Continue.
+12.	Review the connection rules and select Continue.
+
+13.	Select Finish to create the compute profile.
+
+You see a screen similar to the one shown below.
 
