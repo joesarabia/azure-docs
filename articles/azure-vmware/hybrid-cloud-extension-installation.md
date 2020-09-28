@@ -11,7 +11,7 @@ In this article, we walk through procedures for setting up the VMWare HCX soluti
 
 HCX Advanced, the default installation, supports up to three site connections (on-premises or cloud to cloud). If more than three site connections are needed, customers have the option to enable the HCX Enterprise add-on through Support, which is currently in preview. HCX Enterprise carries additional charges for customers after general availability (GA) but provides [additional features](https://cloud.vmware.com/community/2019/08/08/introducing-hcx-enterprise/).
 
-We will walk through all necessary procedures to:
+We shall walk through all necessary procedures to:
 
 > [!div class="checklist"]
 > * Deploy the on-premises HCX OVA (Connector)
