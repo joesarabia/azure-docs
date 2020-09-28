@@ -249,5 +249,41 @@ You see a screen similar to the one shown below.
 
 :::image type="content" source="media/hybrid-cloud-extension-installation/compute-profile-done.png" alt-text="You see a screen similar to the one shown below.":::
 
+## Create Service Mesh
+
+Now it's time to configure Service Mesh between on-premises and Azure VMware Solution Private Cloud.
+
+For an end-to-end overview of this step, view the [Azure VMware Solution: Service Mesh](https://www.youtube.com/embed/FyZ0d3P_T24) video.
+
+1. Under **Infrastructure**, select **Interconnect**, **Service Mesh**, **Create Service Mesh**.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/create-service-mesh.png" alt-text="Under **Infrastructure**, select **Interconnect**, **Service Mesh**, **Create Service Mesh**.":::
+
+
+2.	Review the sites that are pre-populated, and then select Continue.
+
+
+3.	Select the drop-down for each source and remote compute profiles and then select Continue.
+
+The selections define the resources where VMs can consume VMware HCX services.
+
+4.	Review services that will be enabled and then select Continue.
+
+5.	In Advanced Configuration - Override Uplink Network profiles select Continue.
+
+Uplink network profiles connect to the network via which the remote site's interconnect appliances can be reached.
+6.	In Advanced Configuration - Network Extension Appliance Scale Out, review and select Continue.
+
+7.	In Advanced Configuration - Traffic Engineering, review and make any modifications you feel necessary, and then select Continue.
+8.	Review the topology preview and select Continue.
+
+9.	Enter a user-friendly name for this service mesh and select Finish to complete.
+
+10.	Select Tasks to monitor the deployment.
+
+When the service mesh deployment completes successfully, you see a screen similar to this one.
+
+11.	Verify the service mesh's health by checking the appliance status, select Interconnect > Appliances.
+
 
 
