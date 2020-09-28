@@ -259,31 +259,75 @@ For an end-to-end overview of this step, view the [Azure VMware Solution: Servic
 
 :::image type="content" source="media/hybrid-cloud-extension-installation/create-service-mesh.png" alt-text="Under **Infrastructure**, select **Interconnect**, **Service Mesh**, **Create Service Mesh**.":::
 
+1. **Review** the sites that are pre-populated, and then select **Continue**.
 
-2.	Review the sites that are pre-populated, and then select Continue.
+    > [!NOTE]
+    > If this is your first service mesh configuration, you won't need to modify this screen.
 
+:::image type="content" source="media/hybrid-cloud-extension-installation/select-sites.png" alt-text="Review the sites that are pre-populated, and then select Continue.":::
 
-3.	Select the drop-down for each source and remote compute profiles and then select Continue.
+1. Select the **drop-down** for each **source** and **remote** compute profiles and then select **Continue**.
 
 The selections define the resources where VMs can consume VMware HCX services.
 
-4.	Review services that will be enabled and then select Continue.
+:::image type="content" source="media/hybrid-cloud-extension-installation/select-compute-profile-source.png" alt-text="Select the drop-down for each source compute profiles and then select Continue.":::
 
-5.	In Advanced Configuration - Override Uplink Network profiles select Continue.
+:::image type="content" source="media/hybrid-cloud-extension-installation/select-compute-profile-remote.png" alt-text="Select the drop-down for remote compute profiles and then select Continue.":::
 
-Uplink network profiles connect to the network via which the remote site's interconnect appliances can be reached.
-6.	In Advanced Configuration - Network Extension Appliance Scale Out, review and select Continue.
+1. Review services that will be enabled and then select **Continue**.
 
-7.	In Advanced Configuration - Traffic Engineering, review and make any modifications you feel necessary, and then select Continue.
-8.	Review the topology preview and select Continue.
+:::image type="content" source="media/hybrid-cloud-extension-installation/hcx-services.png" alt-text="Select the drop-down for remote compute profiles and then select Continue.":::
 
-9.	Enter a user-friendly name for this service mesh and select Finish to complete.
+1. In Advanced Configuration - Override Uplink Network profiles select **Continue**.
 
-10.	Select Tasks to monitor the deployment.
+:::image type="content" source="media/hybrid-cloud-extension-installation/override-uplink-profiles.png" alt-text="In Advanced Configuration - Override Uplink Network profiles select **Continue**":::
 
-When the service mesh deployment completes successfully, you see a screen similar to this one.
+1. In Advanced Configuration - Network Extension Appliance Scale Out, review and select **Continue**.
 
-11.	Verify the service mesh's health by checking the appliance status, select Interconnect > Appliances.
+:::image type="content" source="media/hybrid-cloud-extension-installation/network-extension-scaleout-workloads.png" alt-text="In Advanced Configuration - Network Extension Appliance Scale Out, review and select Continue":::
 
+1. In Advanced Configuration - Traffic Engineering, review and make any modifications you feel necessary, and then select **Continue**.
 
+:::image type="content" source="media/hybrid-cloud-extension-installation/traffic-engineering.png" alt-text="In Advanced Configuration - Traffic Engineering, review and make any modifications you feel necessary, and then select Continue.":::
 
+1. Review the topology preview and select **Continue**.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/review-topology.png" alt-text="Review the topology preview and select continue":::
+
+1. Enter a **friendly name** for this service mesh and select **Finish** to complete.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/finish-service-mesh.png" alt-text="Enter a **friendly name** for this service mesh and select **Finish** to complete.":::
+
+1. **Select Tasks** to monitor the deployment.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/monitor-service-mesh.png" alt-text="Select Tasks to monitor the deployment.":::
+
+When the service mesh deployment **completes** successfully, you see a screen similar to this one.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/service-mesh-green.png" alt-text="When the service mesh deployment completes successfully, you see a screen similar to this one.":::
+
+1. Verify the service mesh's health by checking the appliance status, select Interconnect > Appliances.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/appliance-status.png" alt-text="Verify the service mesh's health by checking the appliance status, select Interconnect > Appliances.":::
+
+## (Optional) Create a network extension
+
+If you want to extend any networks from your on-premises environment to Azure VMware Solution, follow these steps to extend those networks.
+
+For an end-to-end overview of this step, view the [Azure VMware Solution: Network Extension](https://www.youtube.com/embed/cNlp0f_tTr0) video.
+
+1. Under **Services**, select **Network Extension**, and then select **Create a Network Extension**.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/create-network-extension.png" alt-text="Under **Services**, select **Network Extension**, and then select **Create a Network Extension**":::
+
+1. **Select** each of the **networks** you want to extend to Azure VMware Solution and then select **Next**.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/select-extend-networks.png" alt-text="Under **Services**, select **Network Extension**, and then select **Create a Network Extension**":::
+
+1. Enter the **on-premises gateway IP** for each of the networks you're extending, and then select **Submit**.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/extend-networks-gateway.png" alt-text="Enter the on-premises gateway IP for each of the networks you're extending, and then select Submit.":::
+
+It **takes a few minutes** for the network extension to **complete**. When it does, you see the status change to extension complete.
+
+:::image type="content" source="media/hybrid-cloud-extension-installation/extension-complete.png" alt-text="It **takes a few minutes** for the network extension to **complete**. When it does, you see the status change to extension complete.":::
